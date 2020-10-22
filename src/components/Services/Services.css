@@ -1,0 +1,184 @@
+#services {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  background-image: url("/images/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+  width: 100%;
+  height: 770px;
+  position: relative;
+}
+
+.services-container .services-title {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+.services-container .services-title p {
+  width: 660px;
+  padding-top: 30px;
+  line-height: 45px;
+  text-align: center;
+}
+.services-container .services-title p span {
+  letter-spacing: 0.02px;
+  font-family: Ubuntu;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+.services-container .services-content .services-items {
+  margin-top: 70px;
+}
+.services-container .services-content .services-items .left-items {
+  text-align: end;
+}
+.services-container .services-content .services-items .dot-right figure {
+  margin-left: 0;
+}
+.services-container .services-content .services-items .services-item-desc {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  height: 66px;
+}
+.services-container .services-content .services-items .services-item-desc p {
+  line-height: 22px;
+}
+.services-container .services-content .services-items .services-item-desc p span {
+  font-weight: 700;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+.services-container .services-desc-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+.services-container .services-desc-block .services-img {
+  height: 96px;
+  margin-bottom: 15px;
+  max-width: 100%;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.services-container .services-desc-block .services-img img {
+  max-height: 100%;
+  width: auto;
+}
+.services-container .services-desc-block .services-title {
+  color: #455065;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.services-container .services-desc-block .services-desc {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+/* Media */
+@media only screen and (max-width: 992px) {
+  .services-container .services-title p {
+    padding-top: 20px;
+  }
+  .services-container .services-title p span {
+    font-size: 30px;
+  }
+
+  .services-container .services-content .services-items .services-item-desc p span {
+    font-size: 18px;
+  }
+
+  .services-items div figure {
+    margin: 16px 20px;
+  }
+
+  .services-content .services-image {
+    margin-top: 50%;
+  }
+  .services-content .services-image figure img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #services {
+    height: 715px;
+  }
+
+  .services-container .services-content .services-items {
+    margin-top: 25px;
+  }
+  .services-container .services-content .services-items div.services-item-desc {
+    height: auto;
+  }
+  .services-container .services-content .services-items div.services-item-desc p span {
+    font-size: 15px;
+  }
+
+  .services-container .services-desc-block .services-img img {
+    width: 40%;
+  }
+  .services-container .services-desc-block .services-title {
+    font-size: 19px;
+  }
+  .services-container .services-desc-block .services-desc {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #services {
+    height: 1000px;
+  }
+
+  .min-hide {
+    display: none;
+  }
+
+  .services-container .services-content .services-items div.services-item-desc {
+    text-align: center;
+  }
+  .services-container .services-content .services-items div.services-item-desc p {
+    padding: 0 25px;
+  }
+
+  .services-content .services-image {
+    margin-top: 20px;
+  }
+
+  .services-content .services-image figure {
+    text-align: center;
+  }
+  .services-content .services-image figure img {
+    width: 40%;
+  }
+
+  .services-container .services-desc-block .services-desc {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #services {
+    height: 1065px;
+  }
+
+  .services-container .services-title p span {
+    font-size: 27px;
+  }
+}
+
+/*# sourceMappingURL=Services.css.map */

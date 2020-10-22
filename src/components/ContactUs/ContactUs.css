@@ -1,0 +1,144 @@
+#contact-us {
+  margin-bottom: 0;
+  border-radius: 0;
+  width: 100%;
+  position: relative;
+}
+
+.contact-us-block {
+  padding: 100px 20px;
+  position: relative;
+  display: block;
+}
+.contact-us-block .contact-us-title {
+  color: #000;
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.25em;
+  padding-bottom: 65px;
+  text-align: center;
+}
+
+/* Form */
+.contact-us-form form {
+  margin: 0 auto;
+  max-width: 580px;
+  text-align: center;
+  position: relative;
+}
+.contact-us-form form .form-field, .contact-us-form form .form-textarea-field {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+}
+.contact-us-form form .form-field input, .contact-us-form form .form-textarea-field input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  color: #262d3d;
+  background-color: #fff;
+  font-size: 0.9375rem;
+  font-family: Proxima Nova, Arial, "sans-serif";
+  line-height: 16px;
+  border: 1px solid #455065;
+  border-radius: 3px;
+  appearance: none;
+  vertical-align: middle;
+}
+.contact-us-form form .form-field:before, .contact-us-form form .form-textarea-field:before {
+  content: "*";
+  display: inline-block;
+  margin-left: -24px;
+  width: 24px;
+  text-align: center;
+  font-size: 1.3125rem;
+  padding-top: 12px;
+  height: 28px;
+  vertical-align: middle;
+  color: #455065;
+}
+.contact-us-form form .form-field:after {
+  content: "private";
+  font-size: 0.875rem;
+  font-weight: 300;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px;
+  line-height: 18px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS41IDYuNWg5djdoLTl6bTEgMFY0YTMuNSAzLjUgMCAxMTcgMHYyLjUiIHN0cm9rZT0iI0M0QzZDQSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) 0 no-repeat;
+  background-size: 10px 14px;
+  padding-left: 18px;
+  color: #c4c6ca;
+  pointer-events: none;
+}
+.contact-us-form form .form-textarea-field textarea {
+  padding: 16px;
+  width: 100%;
+  border-radius: 3px;
+  appearance: none;
+  vertical-align: middle;
+  min-width: 200px;
+  max-height: 1000px;
+}
+.contact-us-form form .form-field.invalid:before, .contact-us-form form .form-textarea-field.invalid:before {
+  color: red;
+}
+.contact-us-form .contact-action-block {
+  border-top: none;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+.contact-us-form .contact-action-block p.success {
+  color: green;
+}
+.contact-us-form .contact-action-block p.error {
+  color: red;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.contact-us-form .contact-action-block button {
+  max-width: 288px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNi44OCA2LjhsLTUuNjA0IDYuMDdhLjM3LjM3IDAgMDEtLjI3Ny4xMy4zNzEuMzcxIDAgMDEtLjI3OC0uMTNsLS42LS42NTJhLjQzLjQzIDAgMDEtLjAwMS0uNkw0Ljg0OCA2LjUuMTIgMS4zOGEuNDM0LjQzNCAwIDAxMC0uNTk4bC42MDItLjY1QS4zNjMuMzYzIDAgMDExIDBjLjEwMyAwIC4xOTUuMDQ0LjI3Ni4xM0w2Ljg4IDYuMmMuMDguMDg3LjEyLjE4Ni4xMi4zIDAgLjExNC0uMDQuMjEzLS4xMi4zeiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
+  background-position: calc(100% - 16px) 50%;
+  background-size: 8px;
+  width: 100%;
+  height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 3px;
+  padding: 14px 24px;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+  background-color: #204ecf;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s, border-color 0.3s;
+  border: 1px solid transparent;
+}
+.contact-us-form .errors-block {
+  color: red;
+}
+
+/* Media */
+@media only screen and (max-width: 600px) {
+  .contact-us-block {
+    padding: 50px 20px;
+  }
+
+  .contact-us-block .contact-us-title {
+    font-size: 32px;
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=ContactUs.css.map */

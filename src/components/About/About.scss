@@ -1,0 +1,120 @@
+.about-container {
+  display: block;
+  background: rgba(35,31,32,1);
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  & .about-bg {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    background-image: url("/images/about-bg.svg");
+  }
+
+  & .about-main-container {
+
+    & .about-desc .about-text {
+      padding: 75px 0;
+    }
+
+    & .about-title {
+      display: flex;
+      justify-content: center;
+      padding: 25px;
+      font-style: normal;
+      font-family: Ubuntu;
+      font-size: 20px;
+      color: rgb(129, 112, 105);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bolder;
+    }
+
+    & .about-text {
+      color: white;
+      line-height: 30px;
+
+      & p {
+        padding: 5px;
+      }
+    }
+
+    & .about-image {
+      & figure {
+        margin: 20px;
+        & img {
+          height: 380px;
+        }
+      }
+    }
+  }
+}
+
+/* Media */
+
+@media only screen and (max-width: 1200px) {
+  .about-container .about-main-container .about-image figure img {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-container .about-main-container {
+    & .about-image figure img {
+      height: 220px;
+    }
+
+    & .about-desc .about-text {
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container .about-main-container {
+    & .about-image {
+      margin-top: 25px;
+
+      & figure img {
+        height: 175px;
+      }
+    }
+
+    & .about-desc .about-text {
+      padding: 0;
+
+      & p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-container .about-main-container .about-image figure img {
+    height: 282px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-container .about-main-container {
+    & .about-title {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    & .about-desc .about-text p {
+      font-size: 14px;
+    }
+
+    & .about-image figure img {
+      height: 180px;
+    }
+  }
+}

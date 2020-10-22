@@ -1,0 +1,123 @@
+.special-container {
+  padding-top: 70px;
+  position: relative;
+  background-image: url("/images/software-development-team.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  opacity: 1;
+  transform: translate(0);
+  transition-duration: 0.8s;
+  transition-property: opacity, transform;
+  min-height: 490px;
+}
+.special-container:before {
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.special-container .special-block {
+  height: 100%;
+}
+.special-container .special-block .special-content {
+  align-items: center;
+  justify-content: center;
+}
+.special-container .special-block .special-content > div {
+  text-align: center;
+  display: contents;
+}
+.special-container .special-block .special-content > div .special-sub-title {
+  font-size: 13px;
+  color: #adb5bd;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.special-container .special-block .special-content > div .special-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+.special-container .special-block .special-content > div p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.special-container .special-block .special-content > div p a {
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 200px;
+  border: 2px solid white;
+  padding: 20px 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.special-container .special-block .special-content > div p a:hover {
+  color: #000000;
+  background-color: #fff;
+  cursor: pointer;
+  border-color: #000;
+}
+.special-container .special-block .special-content > div p.special-text {
+  width: 675px;
+  margin: 15px auto;
+  font-size: 20px;
+}
+.special-container .special-block .special-content > div .special-timer {
+  margin-bottom: 3rem;
+}
+.special-container .special-block .special-content > div .special-timer .timer-block {
+  color: #b3b3b3;
+  background: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 7px;
+}
+.special-container .special-block .special-content > div .special-timer .timer-block span {
+  font-size: 40px;
+  line-height: 1.7;
+  color: #fb4244;
+  display: block;
+}
+
+/* Media */
+@media only screen and (max-width: 768px) {
+  .special-container .special-block .special-content > div .special-title {
+    font-size: 38px;
+  }
+  .special-container .special-block .special-content > div p.special-text {
+    width: 540px;
+    font-weight: 500;
+    text-shadow: 2px 2px #000000;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .special-container .special-block .special-content > div p.special-text {
+    width: 420px;
+    font-weight: 500;
+    text-shadow: 2px 2px #000000cf;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .special-container {
+    min-height: 660px;
+  }
+
+  .special-container .special-block .special-content > div p.special-text {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=Special.css.map */
